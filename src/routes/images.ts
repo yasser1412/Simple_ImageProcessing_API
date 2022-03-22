@@ -5,7 +5,7 @@ import { existsSync } from 'fs';
 
 const images = express.Router();
 
-images.get('/', async (req: express.Request, res: express.Response) => {
+images.get('/', async (req: express.Request, res: express.Response): Promise<void> => {
   // storing query variables
   const input_image = req.query.filename as string;
   const width = parseInt(req.query.width as string);
