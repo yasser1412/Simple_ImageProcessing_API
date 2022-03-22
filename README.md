@@ -30,6 +30,12 @@
 - To Run Tests: 
 `npm run test`
 
+- To Build js: 
+`npm run build`
+
+- To Run prettier: 
+`npm run prettier`
+
 All you need to do is to hit the endpoint of processingimages by this format: 
 ``` http://localhost:3000/api/images?filename={image_name}&width={new-width}&height={new-height} ``` 
 
