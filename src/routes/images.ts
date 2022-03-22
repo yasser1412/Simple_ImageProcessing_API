@@ -35,7 +35,6 @@ images.get('/', async (req: express.Request, res: express.Response): Promise<voi
 
   // checks if the required process image is already cached on the device 
   if (existsSync(output_image_fullpath)) {
-    console.log(`pre-stored image is sent`);
 
     // no change response
     res.status(304).sendFile(output_image_fullpath);
@@ -52,8 +51,6 @@ images.get('/', async (req: express.Request, res: express.Response): Promise<voi
         height,
         output_image_fullpath
       );
-      console.log(`generated a new image`);
-
       res.status(200).sendFile(output_image_fullpath);
       return;
 

@@ -36,7 +36,10 @@
 - To Run prettier: 
 `npm run prettier`
 
+- To Run EsLint: 
+`npm run lint`
+
 All you need to do is to hit the endpoint of processingimages by this format: 
 ``` http://localhost:3000/api/images?filename={image_name}&width={new-width}&height={new-height} ``` 
 
-### It's Required to use the images stored in assets/full directory 
+ ###### It's Required to use the images stored in assets/full directory 
